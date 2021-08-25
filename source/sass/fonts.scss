@@ -1,0 +1,44 @@
+@font-face {
+  font-weight: 400;
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/cormorant-garamond-regular.woff2") format("woff2"),
+    url("../fonts/cormorant-garamond-regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/cormorant-garamond-bold.woff2") format("woff2"),
+    url("../fonts/cormorant-garamond-bold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Open Sans";
+  font-style: italic;
+  font-display: swap;
+  src: url("../fonts/open-sans-italic.woff2") format("woff2"),
+    url("../fonts/open-sans-italic.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Consolas";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/consolas.woff2") format("woff2"),
+    url("../fonts/consolas.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Consolas";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/consolas-bold.woff2") format("woff2"),
+    url("../fonts/consolas-bold.woff") format("woff");
+}
