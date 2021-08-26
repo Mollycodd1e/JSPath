@@ -2,3 +2,9 @@
   width: 768px;
   margin: 0 auto;
 }
+
+@media (max-width: $mobile-width-only) {
+  .body-wrapper {
+    width: 320px;
+  }
+}

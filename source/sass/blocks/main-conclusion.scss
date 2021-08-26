@@ -6,7 +6,7 @@
 .main-conclusion h3 {
   font-size: 28px;
   line-height: 36px;
-  font-weight: 400;
+  font-weight: 700;
   margin: 0;
   font-family: $consolas;
 }
@@ -15,4 +15,21 @@
   margin: 0;
   margin-top: 26px;
   line-height: 24px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-conclusion {
+    margin-top: 25px;
+  }
+
+  .main-conclusion h3 {
+    font-size: 21px;
+    line-height: 36px;
+  }
+
+  .main-conclusion p {
+    margin-top: 21px;
+    font-size: 14px;
+    line-height: 18px;
+  }
 }

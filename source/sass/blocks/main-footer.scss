@@ -1,0 +1,26 @@
+.main-footer__wrapper {
+  margin: 0 15px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.main-footer h3 {
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: $consolas;
+  margin: 0;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-footer__wrapper {
+    margin: 0 20px;
+    padding-top: 36px;
+    padding-bottom: 66px;
+  }
+
+  .main-footer h3 {
+    font-size: 23px;
+    font-weight: 700;
+  }
+}

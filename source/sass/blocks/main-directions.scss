@@ -21,3 +21,20 @@
   font-style: italic;
   color: #202326;
 }
+
+@media (max-width: $mobile-width-only) {
+  .main-directions {
+    margin-top: 40px;
+  }
+
+  .main-directions img {
+    margin-top: 28px;
+  }
+
+  .main-directions figure {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 280px;
+    overflow: hidden;
+  }
+}

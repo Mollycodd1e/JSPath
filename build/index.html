@@ -20,7 +20,7 @@
       <h2 class="visually-hidden">Блок с контентом</h2>
       <section class="main-directions">
         <h3 class="visually-hidden">Основные направления JavaScript</h3>
-        <figure class="sign">
+        <figure class="main-directions__image">
           <img src="img/books-desktop.jpg" width="738" height="300" alt="Фото с книгами">
           <figcaption>Можно выделить три основных направления для прогресса JavaScript</figcaption>
         </figure>
@@ -60,86 +60,96 @@
         <h3 class="visually-hidden">Форма отправки оценки</h3>
         <div class="main-form__rate-wrapper">
           <h4>Оцените статью</h4>
-          <div class="main-form__stars">
-            <input type="radio" id="star-1" name="rating" value="1" aria-label="Оценка «1»">
-            <label for="star-1" title="Оценка «1»"></label>
-            <input type="radio" id="star-2" name="rating" value="2" aria-label="Оценка «2»">
-            <label for="star-2" title="Оценка «2»"></label>
-            <input type="radio" id="star-3" name="rating" value="3" aria-label="Оценка «3»">
-            <label for="star-3" title="Оценка «3»"></label>
-            <input type="radio" id="star-4" name="rating" value="4" aria-label="Оценка «4»">
-            <label for="star-4" title="Оценка «4»"></label>
-            <input type="radio" id="star-5" name="rating" value="5" aria-label="Оценка «5»">
-            <label for="star-5" title="Оценка «5»"></label>
-          </div>
+          <fieldset class="main-form__stars">
+            <legend class="visually-hidden">Рейтинг статьи</legend>
+            <div class="main-form__stars-wrapper">
+              <input type="radio" id="star-1" name="rating" value="1" aria-label="Оценка «1»">
+              <label for="star-1" title="Оценка «1»"></label>
+              <input type="radio" id="star-2" name="rating" value="2" aria-label="Оценка «2»">
+              <label for="star-2" title="Оценка «2»"></label>
+              <input type="radio" id="star-3" name="rating" value="3" aria-label="Оценка «3»">
+              <label for="star-3" title="Оценка «3»"></label>
+              <input type="radio" id="star-4" name="rating" value="4" aria-label="Оценка «4»">
+              <label for="star-4" title="Оценка «4»"></label>
+              <input type="radio" id="star-5" name="rating" value="5" aria-label="Оценка «5»">
+              <label for="star-5" title="Оценка «5»"></label>
+            </div>
+          </fieldset>
         </div>
         <div class="main-form__comment-wrapper">
           <h4>Добавить комментарий к книге</h4>
+          <form>
+            <div class="main-form__name-wrapper">
+              <input placeholder="Имя">
+              <label></label>
+            </div>
+            <div class="main-form__mail-wrapper">
+              <input placeholder="E-mail">
+              <label></label>
+            </div>
+            <div class="main-form__books-wrapper main-form__books-wrapper--closed">
+              <input placeholder="Выберите книгу" readonly="">
+              <ul class="main-form__books-list books-list">
+                <li class="books-list__item">
+                  <input class="visually-hidden" name="ninja" id="id-ninja" tabindex="0">
+                  <label for="id-ninja">JavaScript ниндзя</label>
+                </li>
+                <li class="books-list__item">
+                  <input class="visually-hidden" name="pragmatic" id="id-pragmatic" tabindex="0">
+                  <label for="id-pragmatic">Pragmatic Guide to JavaScript</label>
+                </li>
+                <li class="books-list__item">
+                  <input class="visually-hidden" name="techniques" id="id-techniques" tabindex="0">
+                  <label for="id-techniques">Pro JavaScript Techniques</label>
+                </li>
+                <li class="books-list__item">
+                  <input class="visually-hidden" name="expressive" id="id-expressive" tabindex="0">
+                  <label for="id-expressive">Выразительный JavaScript</label>
+                </li>
+              </ul>
+            </div>
+            <div class="main-form__text-wrapper">
+              <textarea placeholder="Ваш отзыв"></textarea>
+            </div>
+            <button type="sumbit">Отправить</button>
+          </form>
         </div>
-        <form>
-          <div class="main-form__name-wrapper">
-            <input>
-            <label></label>
-          </div>
-          <div class="main-form__mail-wrapper">
-            <input>
-            <label></label>
-          </div>
-          <select>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-          </select>
-          <div class="main-form__books-wrapper main-form__books-wrapper--closed">
-            <span>Выберите книгу</span>
-            <ul class="main-form__books-list books-list">
-              <li class="books-list__item">
-                <input class="visually-hidden" name="ninja" id="id-ninja" tabindex="0">
-                <label for="id-ninja">JavaScript ниндзя</label>
-              </li>
-              <li class="books-list__item">
-                <input class="visually-hidden" name="pragmatic" id="id-pragmatic" tabindex="0">
-                <label for="id-pragmatic">Pragmatic Guide to JavaScript</label>
-              </li>
-              <li class="books-list__item">
-                <input class="visually-hidden" name="techniques" id="id-techniques" tabindex="0">
-                <label for="id-techniques">Pro JavaScript Techniques</label>
-              </li>
-              <li class="books-list__item">
-                <input class="visually-hidden" name="expressive" id="id-expressive" tabindex="0">
-                <label for="id-expressive">Выразительный JavaScript</label>
-              </li>
-            </ul>
-          </div>
-          <div class="main-form__text-wrapper">
-            <textarea></textarea>
-          </div>
-          <button type="sumbit">Отправить</button>
-        </form>
       </section>
     </main>
     <footer class="main-footer">
+      <div class="main-footer__wrapper">
       <h3>Похожие посты</h3>
-      <ul class="main-footer__post-list post-list">
-        <li class="post-list__item">
-          <a>
-            <img src="img/reactJS.jpg" width="226" height="227" alt="Картинка reactJS">
-            <p>События жизненного цикла ReactJS</p>
-          </a>
-        </li>
-        <li class="post-list__item"></li>
-          <a>
-            <img src="img/grids.jpg" width="226" height="227" alt="Картинка CSS Grids">
-            <p>CSS Grids. Полное руководство</p>
-          </a>
-        <li class="post-list__item">
-          <a>
-            <img src="img/asyncJS.jpg" width="226" height="227" alt="Асинхронность JavaScript">
-            <p>Асинхронность в JavaScript</p>
-          </a>
-        </li>
-      </ul>
+        <ul class="main-footer__post-list post-list">
+          <li class="post-list__item">
+            <a>
+              <img src="img/reactJS.jpg" width="226" height="227" alt="Картинка reactJS">
+              <p>События жизненного цикла ReactJS</p>
+            </a>
+          </li>
+          <li class="post-list__item">
+            <a>
+              <img src="img/grids.jpg" width="226" height="227" alt="Картинка CSS Grids">
+              <p>CSS Grids. Полное руководство</p>
+            </a>
+          </li>
+          <li class="post-list__item">
+            <a>
+              <img src="img/asyncJS.jpg" width="226" height="227" alt="Асинхронность JavaScript">
+              <p>Асинхронность в JavaScript</p>
+            </a>
+          </li>
+        </ul>
+        <ul class="main-footer__dots-list dots-list">
+          <li class="dots-list__item dots-list__item--active">
+          </li>
+          <li class="dots-list__item">
+          </li>
+          <li class="dots-list__item">
+          </li>
+        </ul>
+      </div>
     </footer>
   </div>
+  <script src="js/main.js"></script>
 </body>
 </html>

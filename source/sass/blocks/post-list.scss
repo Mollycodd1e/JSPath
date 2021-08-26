@@ -1,0 +1,58 @@
+.post-list {
+  display: flex;
+  margin: 0;
+  margin-top: 33.5px;
+  padding: 0;
+  list-style: none;
+}
+
+.post-list li {
+  width: 226px;
+}
+
+.post-list p {
+  margin: 0;
+  margin-top: 19px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: $consolas;
+}
+
+.post-list a {
+  display: block;
+}
+
+.post-list li:nth-child(3n + 2),
+.post-list li:nth-child(3n + 3) {
+  margin-left: 30px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .post-list {
+    width: 280px;
+    overflow: hidden;
+  }
+
+  .post-list li {
+    width: 280px;
+  }
+
+  .post-list p {
+    margin-top: 10px;
+  }
+
+  .post-list img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .post-list li:nth-child(3n + 2),
+  .post-list li:nth-child(3n + 3) {
+    margin-left: 0;
+  }
+
+  .post-list li:nth-child(n + 2) {
+    margin-left: 320px;
+  }
+}
