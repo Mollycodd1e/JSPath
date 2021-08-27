@@ -1,6 +1,9 @@
 .main-server {
+  margin-top: 104px;
+}
+
+.main-server_wrapper {
   margin: 0 15px;
-  margin-top: 106px;
 }
 
 .main-server h3 {
@@ -15,24 +18,36 @@
 
 .main-server blockquote {
   position: relative;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   margin-left: 58px;
+  margin-top: 32px;
+  margin-right: 0;
   font-family: $open-sans;
   font-style: italic;
+  color: #1a1a1a;
 }
 
 .main-server svg {
   position: absolute;
   margin-right: 24px;
-  top: 0;
+  top: -10px;
   left: -58px;
+}
+
+.review__author-name {
+  margin: 0;
+  margin-top: 28px;
 }
 
 @media (max-width: $mobile-width-only) {
   .main-server {
-    margin-top: 34px;
+    margin-top: 30px;
+  }
+
+  .main-server_wrapper {
+    margin: 0 20px;
   }
 
   .main-server h3 {
@@ -45,10 +60,15 @@
     font-size: 14px;
     line-height: 20px;
     margin-left: 53px;
+    margin-top: 24px;
   }
 
   .main-server svg {
     margin-right: 19px;
     left: -53px;
+  }
+
+  .review__author-name {
+    margin-top: 20px;
   }
 }

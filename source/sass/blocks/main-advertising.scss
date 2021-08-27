@@ -1,6 +1,6 @@
 .main-advertising {
-  margin-top: 45px;
-  padding-top: 34px;
+  margin-top: 44px;
+  padding-top: 21px;
   padding-bottom: 36px;
   background-color: #ededed;
 }
@@ -39,6 +39,10 @@
   .main-advertising figure {
     width: 280px;
     overflow: hidden;
+  }
+
+  .main-advertising p {
+    margin: 0;
   }
 
   .main-advertising img {

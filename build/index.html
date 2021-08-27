@@ -10,38 +10,39 @@
 </head>
 <body>
   <div class="body-wrapper">
-    <!--<div style="display:none">
-      <include src="build/img/sprite_auto.svg"></include>
-    </div>-->
-    <header class="main-header">
+    <header class="main-header container">
       <h1>Путь JavaScript</h1>
     </header>
     <main class="main-page">
       <h2 class="visually-hidden">Блок с контентом</h2>
-      <section class="main-directions">
+      <section class="main-directions container">
         <h3 class="visually-hidden">Основные направления JavaScript</h3>
         <figure class="main-directions__image">
-          <img src="img/books-desktop.jpg" width="738" height="300" alt="Фото с книгами">
+          <div class="main-directions__image-wrapper">
+            <img src="img/books-desktop.jpg" width="738" height="300" alt="Фото с книгами">
+          </div>
           <figcaption>Можно выделить три основных направления для прогресса JavaScript</figcaption>
         </figure>
       </section>
-      <section class="main-server">
-        <h3>Серверный JavaScript</h3>
-        <blockquote class="main-server__review review">
-          <p class="review__text">Разработчики и клиенты часто неправильно понимают, что такое система. Они видят графический интерфейс и думают,
-            что он и есть система. Они определяют систему в терминах графического интерфейса и считают, что должны сразу начать работу с графическим интерфейсом. Они не понимают важнейшего принципа: ввод/вывод не важен.
-          </p>
-          <p class="review__author-name">— Р. Мартин</p>
-          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <rect width="34" height="34" fill="url(#pattern0)"></rect>
-            <defs>
-            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-            <use xlink:href="#image0" transform="scale(0.0294118)"></use>
-            </pattern>
-            <image id="image0" width="34" height="34" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAACrElEQVRYhdWYe08TQRTFf06LUIXSFiUqvhE1fv/vYtQqESKJPAQpSoE+zG3Omsk4s7MVivH81ezM3HvmPs7d7Q2mQx1oAU2gASwAThZGQB84BY6BI2BQ1XpVIovAA6A9xZkxcAjsACeXJTIPPAE6FZ2n8A34DJz9DRFzvg7ULkmiwBD4KFJ/IOVkDXju5f8qYLZWlLJeFSJG4tEVEgixHCMTEukoErOGkfmpDpvAD70V5vo1kCiwLp8T1IKF24lDphHfpQ9nMlBW6GfSkROl4WZkj5OdAyRQSCdSLboLbAXiVFcKwzPWGZvAfvB8CdiIEOrI90kRkadSyhBfZXgUPB+pDRelrujmbxWJEOcSt7uRTrRLHTj9aEcODxSJFMxxV1Ew7MXa0kNfohbCfNedZkcs38eekxQGIoBunMNeZP6Y75bTAIvhvIJhvChU2T9OzJ2mS9QGXiFXxbT7fTScV2whlitKfNEJsTor2+9jwZU4m5Pc57Ck9VXgVmZvPbHH5W5czJ2UeM2p2NGF3pTUnOFOasF05H5m1DdlYKwWHHtrDwPHTlphCn0RvH/Y2otELQ2djOdgdfQsCGtDl4ihHRmea/5sCdB3/gTMYN9rVYvgy8y82fR+tzL1duokXDn8AD5pj515VdL2hm0NSTQGNjL2j+uaDeOS21kU3mm+1ESirCC39MKMOup1pgbN91FdknuYmL72/INIzItEWYt2vcm7oleLXGeaj0FRwTsJIrsi0ZbRMvU810Q2x4+BexkCBSbR89NhxReSudBsqKqaPZEtqx8fRvw9Qe7M4WoQytoURlH65iruHYrEMCRiD/rK7XWg60/isJpPVcXLMyayrfr7jVhb9WZMxkh8CR+m+run747WFX7tDZWO3djif/ER7uOf/y0RYjZ/1AC/AEJpmfOWmwhsAAAAAElFTkSuQmCC"></image>
-            </defs>
-          </svg>
-        </blockquote>
+      <section class="main-server container">
+        <div class="main-server_wrapper">
+          <h3>Серверный JavaScript</h3>
+          <blockquote class="main-server__review review">
+            <p class="review__text">Разработчики и клиенты часто неправильно понимают, что такое система. Они видят графический интерфейс и думают,
+              что он и есть система. Они определяют систему в терминах графического интерфейса и считают, что должны сразу начать работу с графическим интерфейсом. Они не понимают важнейшего принципа: ввод/вывод не важен.
+            </p>
+            <p class="review__author-name">— Р. Мартин</p>
+            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="34" height="34" fill="url(#pattern0)"></rect>
+              <defs>
+              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0" transform="scale(0.0294118)"></use>
+              </pattern>
+              <image id="image0" width="34" height="34" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAACrElEQVRYhdWYe08TQRTFf06LUIXSFiUqvhE1fv/vYtQqESKJPAQpSoE+zG3Omsk4s7MVivH81ezM3HvmPs7d7Q2mQx1oAU2gASwAThZGQB84BY6BI2BQ1XpVIovAA6A9xZkxcAjsACeXJTIPPAE6FZ2n8A34DJz9DRFzvg7ULkmiwBD4KFJ/IOVkDXju5f8qYLZWlLJeFSJG4tEVEgixHCMTEukoErOGkfmpDpvAD70V5vo1kCiwLp8T1IKF24lDphHfpQ9nMlBW6GfSkROl4WZkj5OdAyRQSCdSLboLbAXiVFcKwzPWGZvAfvB8CdiIEOrI90kRkadSyhBfZXgUPB+pDRelrujmbxWJEOcSt7uRTrRLHTj9aEcODxSJFMxxV1Ew7MXa0kNfohbCfNedZkcs38eekxQGIoBunMNeZP6Y75bTAIvhvIJhvChU2T9OzJ2mS9QGXiFXxbT7fTScV2whlitKfNEJsTor2+9jwZU4m5Pc57Ck9VXgVmZvPbHH5W5czJ2UeM2p2NGF3pTUnOFOasF05H5m1DdlYKwWHHtrDwPHTlphCn0RvH/Y2otELQ2djOdgdfQsCGtDl4ihHRmea/5sCdB3/gTMYN9rVYvgy8y82fR+tzL1duokXDn8AD5pj515VdL2hm0NSTQGNjL2j+uaDeOS21kU3mm+1ESirCC39MKMOup1pgbN91FdknuYmL72/INIzItEWYt2vcm7oleLXGeaj0FRwTsJIrsi0ZbRMvU810Q2x4+BexkCBSbR89NhxReSudBsqKqaPZEtqx8fRvw9Qe7M4WoQytoURlH65iruHYrEMCRiD/rK7XWg60/isJpPVcXLMyayrfr7jVhb9WZMxkh8CR+m+run747WFX7tDZWO3djif/ER7uOf/y0RYjZ/1AC/AEJpmfOWmwhsAAAAAElFTkSuQmCC"></image>
+              </defs>
+            </svg>
+          </blockquote>
+        </div>
       </section>
       <section class="main-advertising">
         <h3 class="visually-hidden">Реклама</h3>
@@ -50,73 +51,80 @@
           <img src="img/advertising.jpg" width="610" height="200" alt="Фото с книгами">
         </figure>
       </section>
-      <section class="main-conclusion">
-        <h3>Заключение</h3>
-        <p>Синхрония осознаёт сюжетный верлибр. Мифопорождающее текстовое устройство диссонирует лирический субъект. Абстрактное высказывание пространственно просветляет деструктивный символ. Ямб, несмотря на то,
-          что все эти характерологические черты отсылают не к единому образу нарратора, интегрирует мифопоэтический хронотоп. Действительно, ударение приводит палимпсест. Контрапункт приводит ритм.
-        </p>
+      <section class="main-conclusion container">
+        <div class="main-conclusion__wrapper">
+          <h3>Заключение</h3>
+          <p>Синхрония осознаёт сюжетный верлибр. Мифопорождающее текстовое устройство диссонирует лирический субъект. Абстрактное высказывание пространственно просветляет деструктивный символ. Ямб, несмотря на то,
+            что все эти характерологические черты отсылают не к единому образу нарратора, интегрирует мифопоэтический хронотоп. Действительно, ударение приводит палимпсест. Контрапункт приводит ритм.
+          </p>
+        </div>
       </section>
       <section class="main-form">
-        <h3 class="visually-hidden">Форма отправки оценки</h3>
-        <div class="main-form__rate-wrapper">
-          <h4>Оцените статью</h4>
-          <fieldset class="main-form__stars">
-            <legend class="visually-hidden">Рейтинг статьи</legend>
-            <div class="main-form__stars-wrapper">
-              <input type="radio" id="star-1" name="rating" value="1" aria-label="Оценка «1»">
-              <label for="star-1" title="Оценка «1»"></label>
-              <input type="radio" id="star-2" name="rating" value="2" aria-label="Оценка «2»">
-              <label for="star-2" title="Оценка «2»"></label>
-              <input type="radio" id="star-3" name="rating" value="3" aria-label="Оценка «3»">
-              <label for="star-3" title="Оценка «3»"></label>
-              <input type="radio" id="star-4" name="rating" value="4" aria-label="Оценка «4»">
-              <label for="star-4" title="Оценка «4»"></label>
-              <input type="radio" id="star-5" name="rating" value="5" aria-label="Оценка «5»">
-              <label for="star-5" title="Оценка «5»"></label>
-            </div>
-          </fieldset>
-        </div>
-        <div class="main-form__comment-wrapper">
-          <h4>Добавить комментарий к книге</h4>
-          <form>
-            <div class="main-form__name-wrapper">
-              <input placeholder="Имя">
-              <label></label>
-            </div>
-            <div class="main-form__mail-wrapper">
-              <input placeholder="E-mail">
-              <label></label>
-            </div>
-            <div class="main-form__books-wrapper main-form__books-wrapper--closed">
-              <input placeholder="Выберите книгу" readonly="">
-              <ul class="main-form__books-list books-list">
-                <li class="books-list__item">
-                  <input class="visually-hidden" name="ninja" id="id-ninja" tabindex="0">
-                  <label for="id-ninja">JavaScript ниндзя</label>
-                </li>
-                <li class="books-list__item">
-                  <input class="visually-hidden" name="pragmatic" id="id-pragmatic" tabindex="0">
-                  <label for="id-pragmatic">Pragmatic Guide to JavaScript</label>
-                </li>
-                <li class="books-list__item">
-                  <input class="visually-hidden" name="techniques" id="id-techniques" tabindex="0">
-                  <label for="id-techniques">Pro JavaScript Techniques</label>
-                </li>
-                <li class="books-list__item">
-                  <input class="visually-hidden" name="expressive" id="id-expressive" tabindex="0">
-                  <label for="id-expressive">Выразительный JavaScript</label>
-                </li>
-              </ul>
-            </div>
-            <div class="main-form__text-wrapper">
-              <textarea placeholder="Ваш отзыв"></textarea>
-            </div>
-            <button type="sumbit">Отправить</button>
-          </form>
+        <div class="main-form__wrapper container">
+          <h3 class="visually-hidden">Форма отправки оценки</h3>
+          <div class="main-form__rate-wrapper">
+            <h4>Оцените статью</h4>
+            <fieldset class="main-form__stars">
+              <legend class="visually-hidden">Рейтинг статьи</legend>
+              <div class="main-form__stars-wrapper">
+                <input type="radio" id="star-1" name="rating" value="1" aria-label="Оценка «1»">
+                <label for="star-1" title="Оценка «1»"></label>
+                <input type="radio" id="star-2" name="rating" value="2" aria-label="Оценка «2»">
+                <label for="star-2" title="Оценка «2»"></label>
+                <input type="radio" id="star-3" name="rating" value="3" aria-label="Оценка «3»">
+                <label for="star-3" title="Оценка «3»"></label>
+                <input type="radio" id="star-4" name="rating" value="4" aria-label="Оценка «4»">
+                <label for="star-4" title="Оценка «4»"></label>
+                <input type="radio" id="star-5" name="rating" value="5" aria-label="Оценка «5»">
+                <label for="star-5" title="Оценка «5»"></label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="main-form__comment-wrapper">
+            <h4>Добавить комментарий к книге</h4>
+            <form method="post">
+              <div class="main-form__name-wrapper">
+                <input placeholder="Имя" pattern="[A-Za-zА-Яа-яЁё]" minlength="2" maxlength="64" title="Минимум 2 буквы любого алфавита, максимум 64" required="">
+                <label class="visually-hidden">Имя</label>
+              </div>
+              <div class="main-form__mail-wrapper">
+                <input placeholder="E-mail" type="email" required="">
+                <label class="visually-hidden">E-mail</label>
+              </div>
+              <div class="main-form__books-wrapper main-form__books-wrapper--closed">
+                <div class="main-form__input-wrapper">
+                  <input placeholder="Выберите книгу">
+                  <button class="main-form__button" type="button"></button>
+                </div>
+                <ul class="main-form__books-list books-list">
+                  <li class="books-list__item" tabindex="0">
+                    <input class="visually-hidden" name="ninja" id="id-ninja" tabindex="-1">
+                    <label for="id-ninja">JavaScript ниндзя</label>
+                  </li>
+                  <li class="books-list__item" tabindex="0">
+                    <input class="visually-hidden" name="pragmatic" id="id-pragmatic" tabindex="-1">
+                    <label for="id-pragmatic">Pragmatic Guide to JavaScript</label>
+                  </li>
+                  <li class="books-list__item" tabindex="0">
+                    <input class="visually-hidden" name="techniques" id="id-techniques" tabindex="-1">
+                    <label for="id-techniques">Pro JavaScript Techniques</label>
+                  </li>
+                  <li class="books-list__item" tabindex="0">
+                    <input class="visually-hidden" name="expressive" id="id-expressive" tabindex="-1">
+                    <label for="id-expressive">Выразительный JavaScript</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="main-form__text-wrapper">
+                <textarea placeholder="Ваш отзыв"></textarea>
+              </div>
+              <button type="sumbit">Отправить</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <div class="main-footer__wrapper">
       <h3>Похожие посты</h3>
         <ul class="main-footer__post-list post-list">

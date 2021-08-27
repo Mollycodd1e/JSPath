@@ -1,6 +1,9 @@
 .main-conclusion {
+  margin-top: 42px;
+}
+
+.main-conclusion__wrapper {
   margin: 0 15px;
-  margin-top: 45px;
 }
 
 .main-conclusion h3 {
@@ -13,13 +16,18 @@
 
 .main-conclusion p {
   margin: 0;
-  margin-top: 26px;
+  margin-top: 29px;
   line-height: 24px;
 }
 
 @media (max-width: $mobile-width-only) {
   .main-conclusion {
     margin-top: 25px;
+    padding-bottom: 10px;
+  }
+
+  .main-conclusion__wrapper {
+    margin: 0 20px;
   }
 
   .main-conclusion h3 {

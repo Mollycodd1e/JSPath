@@ -33,3 +33,15 @@ input[type="checkbox"].visually-hidden {
   overflow: hidden;
   background-position: 0 0;
 }
+
+.container {
+  width: 768px;
+  margin: 0 auto;
+}
+
+@media (max-width: $mobile-width-only) {
+  .container {
+    width: 320px;
+    margin: 0 auto;
+  }
+}

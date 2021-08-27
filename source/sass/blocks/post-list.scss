@@ -30,8 +30,8 @@
 
 @media (max-width: $mobile-width-only) {
   .post-list {
+    margin-top: 24px;
     width: 280px;
-    overflow: hidden;
   }
 
   .post-list li {
@@ -39,7 +39,8 @@
   }
 
   .post-list p {
-    margin-top: 10px;
+    margin-top: 12px;
+    width: 200px;
   }
 
   .post-list img {
@@ -50,9 +51,5 @@
   .post-list li:nth-child(3n + 2),
   .post-list li:nth-child(3n + 3) {
     margin-left: 0;
-  }
-
-  .post-list li:nth-child(n + 2) {
-    margin-left: 320px;
   }
 }

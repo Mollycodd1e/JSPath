@@ -1,6 +1,6 @@
 .main-form {
-  margin-top: 74px;
-  padding-top: 40px;
+  margin-top: 73px;
+  padding-top: 38px;
   background-color: #ededed;
 }
 
@@ -96,12 +96,62 @@
 .main-form__comment-wrapper form {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 15px;
+  margin-top: 18px;
   padding-bottom: 40px;
+}
+
+.main-form__books-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.main-form__books-list {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 16px;
+  width: 100%;
+  min-height: 183px;
+  list-style: none;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 15px rgba(154, 154, 154, 0.5);
+}
+
+.main-form__books-list li {
+  position: relative;
+  padding-left: 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  cursor: pointer;
+}
+
+.main-form__books-list li:hover,
+.main-form__books-list li:focus {
+  outline: none;
+  background-color: #ededed;
+}
+
+.main-form__books-list li:hover::before,
+.main-form__books-list li:focus::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 7px;
+  background-color: #0062ff;
 }
 
 .main-form__books-wrapper--closed .main-form__books-list {
   display: none;
+}
+
+.main-form__books-wrapper--opened .main-form__books-list {
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 0;
 }
 
 .main-form__comment-wrapper input {
@@ -121,6 +171,7 @@
 .main-form__mail-wrapper input ,
 .main-form__name-wrapper input {
   border: none;
+  cursor: pointer;
 }
 
 .main-form__text-wrapper {
@@ -137,6 +188,7 @@
   border: 1px solid #e6e6e6;
   resize: none;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .main-form__comment-wrapper button {
@@ -146,26 +198,120 @@
   font-family: "Arial", sans-serif;
   width: 226px;
   height: 50px;
-  margin-top: 20px;
+  margin-top: 12px;
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #0062ff;
+  cursor: pointer;
+}
+
+.main-form__input-wrapper {
+  position: relative;
+}
+
+.main-form__input-wrapper input {
+  border: 2px solid #7f7f7f;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.main-form__input-wrapper button {
+  position: absolute;
+  margin: 0;
+  right: 30px;
+  top: 15px;
+  width: 25px;
+  height: 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.main-form__books-wrapper--closed .main-form__input-wrapper button {
+  position: absolute;
+  right: 10px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+    top: 10px;
+    width: 10px;
+    height: 2px;
+    z-index: 10;
+    background-color: #777777;
+    cursor: pointer;
+  }
+
+  &::before {
+    transform: rotate(-45deg);
+    right: 5px;
+  }
+
+  &::after {
+    transform: rotate(45deg);
+    right: 11px;
+  }
+}
+
+.main-form__books-wrapper--opened .main-form__input-wrapper button {
+  position: absolute;
+  right: 10px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    width: 10px;
+    height: 2px;
+    z-index: 10;
+    background-color: #777777;
+    cursor: pointer;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    right: 5px;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    right: 11px;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
+  .main-form {
+    margin-top: 20px;
+    padding-top: 38px;
+    background-color: #ededed;
+  }
+
   .main-form__rate-wrapper,
   .main-form__comment-wrapper,
   .main-form__form-wrapper {
     margin: 0 20px;
   }
 
+  .main-form__stars-wrapper {
+    margin-top: 7px;
+  }
+
+  .main-form__comment-wrapper h4 {
+    margin-top: 19px;
+  }
+
   .main-form__comment-wrapper input {
     width: 280px;
   }
 
-  .main-form__comment-wrapper .main-form__name-wrapper,
+  .main-form__comment-wrapper .main-form__name-wrapper {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
   .main-form__comment-wrapper .main-form__mail-wrapper,
   .main-form__comment-wrapper .main-form__books-wrapper {
     margin-left: 0;
@@ -175,7 +321,7 @@
   .main-form__comment-wrapper form {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 15px;
+    margin-top: 12px;
     padding-bottom: 40px;
     justify-content: center;
   }
@@ -186,6 +332,14 @@
 
   .main-form__comment-wrapper button {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 4px;
+    height: 44px;
+  }
+
+  .main-form__input-wrapper button {
+    margin: 0;
+    right: 30px;
+    top: 15px;
+    width: 25px;
   }
 }
